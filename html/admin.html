@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Usuario</title>
-    <link rel="stylesheet" href="styles2.css">
+    <title>Página de Administrador</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="admin-container">
-        <h2>Bienvenido, Usuario</h2>
-        <button id="mostrarVideo">Ver Video</button>
-        <button id="ocultarVideo">Ocultar Video</button>
-        <div id="videoContainer" style="display:none;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3F-kuNGlNco" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <h2>Panel de Administrador</h2>
         <nav>
             <ul>
-                <li><a href="#" onclick="mostrarPanel('mapa')">Abrir Mapa</a></li>
+                <li><a href="#" onclick="mostrarPanel('reportes')">Reportes</a></li>
+                <li><a href="#" onclick="mostrarPanel('soporte')">Soporte</a></li>
+                <li><a href="#" onclick="mostrarPanel('seguridad')">Seguridad</a></li>
             </ul>
         </nav>
-        <div id="mapa" style="display:none;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20805.825051430962!2d-74.7847285652771!3d10.947882261761025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5cd453b23dfed%3A0xaab989d71edd9f34!2sInstituci%C3%B3n%20Universitaria%20de%20Barranquilla%20IUB!5e0!3m2!1ses-419!2sco!4v1717582669043!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="panel-reportes" style="display: none;">
+            <h3>Panel de Reportes</h3>
+            <p></p>
+            <p>Reporte #1</p>
+            <p>Reporte #2</p>
+            <p></p>
+        </div>
+        <div id="panel-soporte" style="display: none;">
+            <h3>Panel de Soporte</h3>
+            <p></p>
+            <p><center><img src="../img/imagen2.jpg" alt=""></center></p>
+        </div>
+        <div id="panel-seguridad" style="display: none;">
+            <h3>Panel de Seguridad</h3>
+            <p><center><img src="../img/imagen.jpg" alt=""></center></p>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script>
-        function mostrarPanel(panelId) {
-            var panel = document.getElementById(panelId);
-            if (panel.style.display === "none") {
-                panel.style.display = "block";
-            } else {
-                panel.style.display = "none";
-            }
+        function mostrarPanel(panel) {
+
+            document.getElementById('panel-reportes').style.display = 'none';
+            document.getElementById('panel-soporte').style.display = 'none';
+            document.getElementById('panel-seguridad').style.display = 'none';
+
+            document.getElementById('panel-' + panel).style.display = 'block';
         }
-
-        document.getElementById("mostrarVideo").addEventListener("click", function() {
-            document.getElementById("videoContainer").style.display = "block";
-        });
-
-        document.getElementById("ocultarVideo").addEventListener("click", function() {
-            document.getElementById("videoContainer").style.display = "none";
-        });
     </script>
 </body>
 </html>

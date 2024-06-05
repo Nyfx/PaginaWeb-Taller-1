@@ -34,3 +34,32 @@ document.getElementById('formularioInicioSesion').addEventListener('submit', fun
     })
     .catch(error => console.error('Error:', error));
 });
+
+// Función para mostrar la sección seleccionada
+function showSection(sectionId) {
+    // Oculta todas las secciones
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+        section.style.display = 'none';
+    });
+
+    // Muestra la sección seleccionada
+    var section = document.getElementById(sectionId);
+    section.style.display = 'block';
+}
+
+// Función para mostrar/ocultar el video
+function toggleVideo() {
+    var videoContainer = document.getElementById("videoContainer");
+    if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+        videoContainer.style.display = "block";
+    } else {
+        videoContainer.style.display = "none";
+    }
+}
+
+// Muestra la sección de video y mapa por defecto (para pruebas)
+document.addEventListener("DOMContentLoaded", function() {
+    showSection('video-section');
+    showSection('map-section');
+});

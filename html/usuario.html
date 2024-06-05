@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <div class="user-container">
-        <h2>Bienvenido Usuario!</h2>
+    <div class="usuario-container">
+        <h2>Bienvenido usuario</h2>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarPanel('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="mostrarPanel('video')">Video</a></li>
+                <li><a href="#" onclick="mostrarPanel('mapa')">Mapa</a></li>
+                <li><a href="#" onclick="mostrarPanel('formulario')">Formulario</a></li>
+            </ul>
+        </nav>
+        <div id="panel-inicio" style="display: none;">
+            <p></p>
+            <p>Proyecto: </p>
+            <p>Hardware y Software para la productividad digital: Una solución a mejorar la eficiencia</p>
+            <p></p>
+            <p>Guillermo Angarita Parra, y Jesus David Altamar Varilla</p>
+        </div>
+        <div id="panel-video" style="display: none;">
+            <h3>Multimedia</h3>
+            <p></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3F-kuNGlNco?si=_6WYjclFz3_bmopI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="panel-mapa" style="display: none;">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20805.825051430962!2d-74.7847285652771!3d10.947882261761025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5cd453b23dfed%3A0xaab989d71edd9f34!2sInstituci%C3%B3n%20Universitaria%20de%20Barranquilla%20IUB!5e0!3m2!1ses-419!2sco!4v1717582669043!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="panel-formulario" style="display: none;">
+            <h3>Formulario</h3>
+            <p>Proximamente</p>
+        </div>
     </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        function mostrarPanel(panel) {
+
+            document.getElementById('panel-inicio').style.display = 'none';
+            document.getElementById('panel-video').style.display = 'none';
+            document.getElementById('panel-mapa').style.display = 'none';
+            document.getElementById('panel-formulario').style.display = 'none';
+
+            document.getElementById('panel-' + panel).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

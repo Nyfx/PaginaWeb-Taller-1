@@ -22,14 +22,14 @@ document.getElementById('formularioInicioSesion').addEventListener('submit', fun
                 } else {
                     alert('¡Rol inválido!');
                 }
-            }, 900); // Redirigir después de (0.9) segundos
+            }, 100); // Redirigir después de (0.9) segundos
         } else {
             document.getElementById('mensajeError').innerText = 'Error al iniciar sesión. Por favor, verifica tu nombre de usuario y contraseña.';
             document.getElementById('mensajeError').style.display = 'block'; // Mostrar el mensaje de error en rojo
             
             setTimeout(function() {
                 document.getElementById('mensajeError').style.display = 'none'; // Ocultar el mensaje después de 5 segundos
-            }, 5000); // Ocultar después de 5 segundos
+            }, 500); // Ocultar después de 5 segundos
         }
     })
     .catch(error => console.error('Error:', error));

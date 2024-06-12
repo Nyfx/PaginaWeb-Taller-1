@@ -22,7 +22,7 @@ document.getElementById('formularioInicioSesion').addEventListener('submit', fun
                 } else {
                     alert('¡Rol inválido!');
                 }
-            }, 2000); // Redirigir después de 2 segundos
+            }, 900); // Redirigir después de (0.9) segundos
         } else {
             document.getElementById('mensajeError').innerText = 'Error al iniciar sesión. Por favor, verifica tu nombre de usuario y contraseña.';
             document.getElementById('mensajeError').style.display = 'block'; // Mostrar el mensaje de error en rojo

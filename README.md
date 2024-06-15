@@ -1,3 +1,2 @@
 Pagina Web Parcial
-Guillermo Angarita Parra
-Jesus Altamar varilla
+Guillermo Angarita Parra Y Jesus Altamar varilla

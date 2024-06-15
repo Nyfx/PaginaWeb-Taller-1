@@ -1,1 +1,3 @@
-# PaginaWeb-Taller-1
+Pagina Web Parcial
+Guillermo Angarita Parra
+Jesus Altamar varilla

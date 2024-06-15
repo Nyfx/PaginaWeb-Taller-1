@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario</title>
+    <link rel="stylesheet" href="../css/stylesusr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container0">
+            <div class="navbar-brand">
+                <span>NextCO</span>
+            </div>
+            <div class="navbar-actions">
+                <div class="dropdown">
+                    <button class="dropbtn" id="profileButton">
+                        <img src="../img/profile-placeholder.png" class="profile-img" alt="Profile">
+                        <span>Perfil</span> <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="../html/login.html" id="login-link">Iniciar Sesión</a>
+                        <a href="#" id="logout-link" style="display: none;">Cerrar Sesión</a>
+                        <a href="../index.html" id="home-link">Ir a la Página de Inicio</a>
+                        <a href="../admin.html" id="admin-link" style="display: none;">Ir al Panel de Administrador</a>
+                        <a href="../usuario.html" id="user-link" style="display: none;">Ir al Panel de Usuario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="user-container">
+        <div class="user-panel">
+            <h1>Bienvenido al Panel de Usuario</h1>
+            <form id="userForm">
+                <label for="campo1">Nombre *</label>
+                <input type="text" id="campo1" required>
+                <label for="campo2">Petición *</label>
+                <input type="text" id="campo2" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/user.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

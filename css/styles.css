@@ -78,7 +78,6 @@ body {
     margin-left: auto;
 }
 
-/* Profile menu styles */
 .profile-img {
     width: 30px;
     height: 30px;
@@ -252,7 +251,6 @@ footer p {
     color: #ccc;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column;

@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let user = JSON.parse(localStorage.getItem('user'));
         let users = JSON.parse(localStorage.getItem('users')) || [];
 
-        // Actualizar el usuario en localStorage
         user.name = name;
         user.email = email;
         if (password) {
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         localStorage.setItem('user', JSON.stringify(user));
 
-        // Actualizar el usuario en la lista de usuarios
         let userIndex = users.findIndex(u => u.email === user.email);
         if (userIndex !== -1) {
             users[userIndex] = user;

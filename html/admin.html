@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - NextCO</title>
+    <link rel="stylesheet" href="../css/stylesadm.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container0">
+            <div class="navbar-brand">
+                <span>NextCO</span>
+            </div>
+            <ul class="navbar-nav">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </ul>
+            <div class="navbar-actions">
+                <div class="dropdown" id="dropdown">
+                    <button class="dropbtn" id="profileButton">
+                        <img src="../img/profile-placeholder.png" class="profile-img" alt="Profile">
+                        <span>Perfil</span> <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="login.html" id="logout-link">Cerrar Sesión</a>
+                        <a href="admin.html" id="admin-link">Ir al Panel de Administrador</a>
+                        <a href="usuario.html" id="user-link">Ir al Panel de Usuario</a>
+                        <a href="../index.html" id="home-link">Ir a la Página de Inicio</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="login.html" id="login-link">Iniciar Sesión</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="admin-container">
+            <div class="admin-panel">
+                <h1>Panel de Administrador</h1>
+                <h2>Usuarios Registrados</h2>
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo Electrónico</th>
+                            <th>Contraseña</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Usuarios se cargarán aquí -->
+                    </tbody>
+                </table>
+                <h2>Datos del Formulario</h2>
+                <table id="formDataTable">
+                    <thead>
+                        <tr>
+                            <th>Campo 1</th>
+                            <th>Campo 2</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Datos del formulario se cargarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="../js/profile.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

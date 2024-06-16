@@ -4,43 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextCO</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
     <nav class="navbar">
         <div class="container0">
-            <div class="navbar-brand">
-                <span>NextCO</span>
-            </div>
-            <ul class="navbar-nav">
-                <a class="nav-link" href="index.html">Inicio</a>
-            </ul>
-            <div class="navbar-actions">
-                <div class="dropdown" id="dropdown" style="display: none;">
-                    <button class="dropbtn" id="profileButton">
-                        <img src="img/profile-placeholder.png" class="profile-img" alt="Profile">
-                        <span>Perfil</span> <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="html/login.html" id="logout-link">Cerrar Sesión</a>
-                        <a href="html/admin.html" id="admin-link" style="display: none;">Ir al Panel de Administrador</a>
-                        <a href="html/usuario.html" id="user-link" style="display: none;">Ir al Panel de Usuario</a>
-                        <a href="index.html" id="home-link" style="display: none;">Ir a la Página de Inicio</a>
-                    </div>
-                </div>
-                <a class="nav-link" href="html/login.html" id="login-link">Iniciar Sesión</a>
-            </div>
+          <div class="navbar-brand">
+            <span>NextCO</span>
+          </div>
+          <ul class="navbar-nav">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="info.html">Información</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
+          </ul>
+          <div class="navbar-actions">
+          </div>
         </div>
-    </nav>
+      </nav>
     <main>
-        <div class="container">
-            <div class="hero">
-                <h2>Desarrollo de un Prototipo Web para la Recomendación de Hardware Especializado y Software:</h2>
-                <h3> Una Herramienta para Optimizar las Decisiones Economicas y Prodcutivas de las Personas</h3>
+        <section class="hero">
+            <div class="container">
+                <h2>Aplicativo Web</h2>
+                <p>Hardware y Software para la productividad digital: Una solución a mejorar la eficiencia</p>
+                <button onclick="window.location.href = 'html/info.html';">Ver más</button>
             </div>
-            <div class="features">
-                <h2>Objetivos Específicos</h2>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2>Objetivos Especificos:</h2>
                 <div class="feature-grid">
                     <div class="feature">
                         <i class="fas fa-chart-line"></i>
@@ -49,20 +41,22 @@
                         <p>Identificar los criterios clave que guiarán las recomendaciones personalizadas, como el tipo de tarea, la capacidad de procesamiento requerida y el presupuesto disponible.</p>
                     </div>
                     <div class="feature">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-lock"></i>
                         <h3>Desarrollo de Algoritmos de Recomendación</h3>
                         <p>Diseñar y desarrollar algoritmos inteligentes que utilicen los datos recopilados sobre las necesidades y preferencias del usuario para generar recomendaciones personalizadas.</p>
-                        <p>Integrar técnicas de aprendizaje automático y análisis de datos para mejorar la precisión y relevancia de las recomendaciones.</p>
+                        <p> Integrar técnicas de aprendizaje automático y análisis de datos para mejorar la precisión y relevancia de las recomendaciones.</p>
                     </div>
                     <div class="feature">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-user"></i>
                         <h3>Integración de Fuentes de Información Externas</h3>
                         <p>Establecer conexiones con bases de datos y fuentes de información externas para acceder a información actualizada sobre hardware, dispositivos adicionales, drivers y software disponibles en el mercado.</p>
                         <p>Desarrollar mecanismos de actualización automática para garantizar que las recomendaciones estén siempre basadas en la información más reciente y relevante.</p>
                     </div>
                 </div>
             </div>
-            <div class="testimonials">
+        </section>
+        <section class="testimonials">
+            <div class="container">
                 <h2>Antecedentes</h2>
                 <div class="testimonial-grid">
                     <div class="testimonial">
@@ -75,11 +69,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 NextCO. Guillermo Angarita Parra Y Jesús David Altamar Varilla.</p>
+        <div class="container">
+            <p>&copy; 2024 NextCO. Guillermo Angarita Parra Y Jesus Altamar Varilla.</p>
+        </div>
     </footer>
-    <script src="js/profile.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

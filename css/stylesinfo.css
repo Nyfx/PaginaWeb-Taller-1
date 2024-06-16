@@ -78,7 +78,6 @@ body {
     margin-left: auto;
 }
 
-/* Profile menu styles */
 .profile-img {
     width: 30px;
     height: 30px;
@@ -136,8 +135,6 @@ body {
 .dropbtn:hover {
     background-color: #4752c4;
 }
-
-/* Añadir a styles.css */
 
 .info-section {
     background-color: #202225;
@@ -257,7 +254,6 @@ footer p {
     color: #ccc;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column;

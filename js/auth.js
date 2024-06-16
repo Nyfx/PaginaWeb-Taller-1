@@ -14,6 +14,12 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const email = document.getElementById('registerEmail').value;
     const password = document.getElementById('registerPassword').value;
 
+    // Validación de campos vacíos
+    if (name.trim() == '' || email.trim() == '' || password.trim() == '') {
+        alert("No puede haber ningún campo vacío.");
+        return;
+    }
+
     const user = {
         name: name,
         email: email,
@@ -33,6 +39,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     event.preventDefault();
     const email = document.getElementById('loginEmail').value;
     const password = document.getElementById('loginPassword').value;
+
+    // Validación de campos vacíos
+    if (email.trim() == '' || password.trim() == '') {
+        alert("No puede haber ningún campo vacío.");
+        return;
+    }
 
     console.log('Iniciando sesión...');
     console.log(`Email: ${email}, Password: ${password}`);

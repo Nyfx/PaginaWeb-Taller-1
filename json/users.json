@@ -1,0 +1,52 @@
+[
+    {
+        "nombre": "Guillermo",
+        "apellido": "Angarita Parra",
+        "nickname": "guille",
+        "correo": "guille@example.com",
+        "telefono": "123456789",
+        "indicativo_pais": "+57",
+        "contrasena": "Guillermo123!",
+        "rol": "admin"
+    },
+    {
+        "nombre": "Jesus David",
+        "apellido": "Altamar Varilla",
+        "nickname": "jesus",
+        "correo": "jesus@example.com",
+        "telefono": "987654321",
+        "indicativo_pais": "+57",
+        "contrasena": "Jesus123!",
+        "rol": "admin"
+    },
+    {
+        "nombre": "Usuario",
+        "apellido": "Uno",
+        "nickname": "user1",
+        "correo": "user1@example.com",
+        "telefono": "123123123",
+        "indicativo_pais": "+1",
+        "contrasena": "UserOne123!",
+        "rol": "usuario"
+    },
+    {
+        "nombre": "Usuario",
+        "apellido": "Dos",
+        "nickname": "user2",
+        "correo": "user2@example.com",
+        "telefono": "321321321",
+        "indicativo_pais": "+1",
+        "contrasena": "UserTwo123!",
+        "rol": "usuario"
+    },
+    {
+        "nombre": "Usuario",
+        "apellido": "Tres",
+        "nickname": "user3",
+        "correo": "user3@example.com",
+        "telefono": "456456456",
+        "indicativo_pais": "+1",
+        "contrasena": "UserThree123!",
+        "rol": "usuario"
+    }
+]

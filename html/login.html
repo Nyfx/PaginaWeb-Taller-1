@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCO | Inicio de sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #202020;
+        }
+        .card {
+            background-color: #2a2a2a;
+        }
+        .footer {
+            background-color: #202020;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+        .footer a {
+            color: #ffffff;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .profile-img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">NextCO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Volver al inicio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center w-100">
+            <div class="col-md-6 col-lg-5">
+                <div class="card text-white shadow-lg">
+                    <div class="card-body">
+                        <div id="loginSection">
+                            <h1 class="text-center">Iniciar Sesión</h1>
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="loginEmailOrNickname">Correo Electrónico o Nickname</label>
+                                    <input type="text" class="form-control" id="loginEmailOrNickname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginPassword">Contraseña</label>
+                                    <input type="password" class="form-control" id="loginPassword">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                            </form>
+                            <p class="text-center mt-3">No tienes cuenta? <span id="showRegister" class="text-primary" style="cursor: pointer;">Regístrate aquí <i class="fas fa-arrow-right"></i></span></p>
+                        </div>
+                        <div id="registerSection" class="d-none">
+                            <h1 class="text-center">Registro</h1>
+                            <form id="registerForm">
+                                <div class="form-group">
+                                    <label for="registerName">Nombre</label>
+                                    <input type="text" class="form-control" id="registerName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerLastName">Apellido</label>
+                                    <input type="text" class="form-control" id="registerLastName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerNickname">Nickname</label>
+                                    <input type="text" class="form-control" id="registerNickname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerEmail">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="registerEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerPhone">Teléfono</label>
+                                    <input type="text" class="form-control" id="registerPhone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerCountryCode">Indicativo de País</label>
+                                    <select class="form-control" id="registerCountryCode">
+                                        <option value="+1">+1 Estados Unidos</option>
+                                        <option value="+57">+57 Colombia</option>
+                                        <option value="+44">+44 Reino Unido</option>
+                                        <option value="+49">+49 Alemania</option>
+                                        <option value="+91">+91 India</option>
+                                        <!-- Add more country codes as needed -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerPassword">Contraseña</label>
+                                    <input type="password" class="form-control" id="registerPassword">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+                            </form>
+                            <p class="text-center mt-3">Ya tienes cuenta? <span id="showLogin" class="text-primary" style="cursor: pointer;">Inicia sesión aquí <i class="fas fa-arrow-left"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto">
+        <p class="mb-0">&copy; 2023 NextCO. Guillermo Angarita Parra y Jesús David Altamar Varilla.</p>
+        <p>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+        </p>
+        <p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
